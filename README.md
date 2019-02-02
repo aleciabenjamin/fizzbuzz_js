@@ -39,6 +39,14 @@ The fs module provides an API for interacting with the file system.  It allows n
 By defining fizzBuzz before the 'it' blocks, it is accessible to all the 'it' blocks below the 'describe' block.
 
 
+3. Explain the difference between using === and == in JS.
+
+#### <strong>Answer<strong>
+When using the triple equals operator (===), one is testing for strict equality where both the type and value have to be the same.  In the case of double equals (==), one is testing for loose equality where the two values are only compared after Javascript attempts to convert them into a common type.
+
+
+
+
 
 
 
