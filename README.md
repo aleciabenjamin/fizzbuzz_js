@@ -76,6 +76,12 @@ describe('User can input a value and get FizzBuzz results', () => {
 
 Placing async first ensures that the function returns a promise.  Await then pauses the asynchronous programming until the promise is resolved, then returns the result.  In this case it initializes the browser and visits the server's root path, reloads before each test, and ensures that the browser closes after the test is finished.
 
+7. Explain what expectations in the context of testing are.
+
+Expectations in this context are what you anticipate your code will do and continue to do when you make changes.  
+
+
+
 
 
 
