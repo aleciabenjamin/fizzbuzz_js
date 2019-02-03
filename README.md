@@ -44,6 +44,10 @@ By defining fizzBuzz before the 'it' blocks, it is accessible to all the 'it' bl
 #### <strong>Answer<strong>
 When using the triple equals operator (===), one is testing for strict equality where both the type and value have to be the same.  In the case of double equals (==), one is testing for loose equality where the two values are only compared after Javascript attempts to convert them into a common type.
 
+4. Explain why we are moving (number % 5 === 0) to the top?  
+
+By moving (5 === 0) above (3 === 0) we are ensuring that the larger number is parsing through the numbers first.  Because there are numbers divisible by 3 and 5 and the game only allows one expression per number, the largest should be placed first with the smaller next and the smallest last.   
+
 
 
 
