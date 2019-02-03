@@ -30,7 +30,7 @@ let  fizzBuzz = fs.readFileSync('./src/js/fizz-buzz.js');
 eval( fizzBuzz + `\nexports.FizzBuzz = FizzBuzz;`)
 ```
 #### <strong>Answer<strong>
-The fs module provides an API for interacting with the file system.  It allows node.js to read fizz-buzz.js and store it in the fizzBuzz variable.  The eval function evaluates the argument and exports
+The fs module provides an API for interacting with the file system.  It allows node.js to read fizz-buzz.js and store it in the fizzBuzz variable.  The eval function evaluates the argument, but I am unsure about where it is exported, if at all.
 
 
 2. Please explain why we are placing the let fizzBuzz = new FizzBuzz outside the it block.
@@ -79,6 +79,64 @@ Placing async first ensures that the function returns a promise.  Await then pau
 7. Explain what expectations in the context of testing are.
 
 Expectations in this context are what you anticipate your code will do and continue to do when you make changes.  
+
+8. Write a line to line explanation of what is happening in this code:
+```
+<script src="./js/fizz-buzz.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                displayDiv.innerHTML = result;
+            })
+        })
+    </script>
+```
+````
+<script src="./js/fizz-buzz.js"></script>
+````
+fizz-buzz.js is declared as the source for the code that follows.
+```
+document.addEventListener('DOMContentLoaded', () => {
+```
+This attaches an event handler to the document after the DOM is loaded.
+```
+let button = document.getElementById('button')
+```
+This assigns the 'button' variable.
+```
+let displayDiv = document.getElementById('display_answer')
+```
+This assigns the 'displayDiv' variable.
+
+```
+button.addEventListener('click', () =>{
+```
+This assigns the 'click' event.
+```
+let value = document.getElementById('value').value
+```
+This assigns the 'value' variable.
+```
+let fizzBuzz = new FizzBuzz
+```
+This creates a new instance of the FizzBuzz class and stores it in the 'fizzbuzz' variable.
+```
+let result = fizzBuzz.check(value)
+```
+
+This assigns the 'result' variable to the result of the function.
+```
+displayDiv.innerHTML = result;
+```
+The 'displayDiv' variable which displays the answer becomes the 'result' variable.
+
+
+ 
 
 
 
