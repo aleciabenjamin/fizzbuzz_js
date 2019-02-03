@@ -33,7 +33,7 @@ eval( fizzBuzz + `\nexports.FizzBuzz = FizzBuzz;`)
 The fs module provides an API for interacting with the file system.  It allows node.js to read fizz-buzz.js and store it in the fizzBuzz variable.  The eval function evaluates the argument, but I am unsure about where it is exported, if at all.
 
 
-2. Please explain why we are placing the let fizzBuzz = new FizzBuzz outside the it block.
+2. Please explain why we are placing the let fizzBuzz = new FizzBuzz outside the 'it' block.
 
 #### <strong>Answer<strong>
 By defining fizzBuzz before the 'it' blocks, it is accessible to all the 'it' blocks below the 'describe' block.
@@ -134,6 +134,13 @@ This assigns the 'result' variable to the result of the function.
 displayDiv.innerHTML = result;
 ```
 The 'displayDiv' variable which displays the answer becomes the 'result' variable.
+
+9. Explain what a CDN (Content Delivery Network) is.
+#### <strong>Answer<strong> 
+A CDN is a system of geographically distributed servers that allow for the quick transfer of content to users based on the geographic location of the user.  
+
+
+
 
 
  
