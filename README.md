@@ -46,7 +46,12 @@ When using the triple equals operator (===), one is testing for strict equality 
 
 4. Explain why we are moving (number % 5 === 0) to the top?  
 
-By moving (5 === 0) above (3 === 0) we are ensuring that the larger number is parsing through the numbers first.  Because there are numbers divisible by 3 and 5 and the game only allows one expression per number, the largest should be placed first with the smaller next and the smallest last.   
+By moving (5 === 0) above (3 === 0) we are ensuring that the larger number is parsing through the numbers first.  Because there are numbers divisible by 3 and 5 and the game only allows one expression per number, the largest should be placed first with the smaller next and the smallest last.  
+
+5. Explain the difference between feature and unit test.
+
+Unit tests are written by developers to ensure that a specific method (unit) of a class is performing its tasks, whereas feature tests test a portion of functionality from the user's perspective and may interact with dependencies like Web Services and Databases.
+
 
 
 
